@@ -1,0 +1,14 @@
+<%- include('partials/header'); -%>
+
+<h1>Admin Access Required</h1>
+
+<form action="/adminAccess" method="POST">
+    <div>
+        <h4>Password</h4>
+        <input type="password" name="AdminPassword" id="adminPWD" placeholder="Enter Admin Password Here">
+    </div>
+    <br>
+    <button type="submit" name="button" class=" btn btn-primary"> Log-in </button>
+</form>
+
+<%- include('partials/footer'); -%>
