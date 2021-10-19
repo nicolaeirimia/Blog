@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+<h1>BookpileTBR</h1>
+
+
+<p><%= description %> </p>
+
+    <%  posts.forEach(post => { %>
+        <h1><%= post.Title  %> </h1>
+        <p><%= post.Content.substring(0,270) + "..." %> 
+        <a href="posts/<%= post.Title %> ">Read More</a>
+    </p>
+   <% });  %> 
+<%- include('partials/footer'); -%>
+
